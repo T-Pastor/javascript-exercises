@@ -3,8 +3,8 @@ const sumAll = function(num1, num2) {
     let sum = 0;
 
     for (let i = 0; i < numbers.length; i++) {
-        if (!typeof numbers.at(i) === 'number' || !numbers.at(i) > 0) {
-            return 'ERROR'
+        if (!typeof numbers.at(i) === 'number' || numbers.at(i) < 0) {
+            return 'ERROR';
         }
     }
 
