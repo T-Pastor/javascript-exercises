@@ -10,17 +10,12 @@ const sumAll = function(num1, num2) {
 
     numbers.sort(function(a, b) {return a - b});
 
-
-
     for (let i = numbers.at(0); i <= numbers.at(1); i++) {
         sum += i;
     }
 
     return sum;
 }
-
-
-
 
 // Do not edit below this line
 module.exports = sumAll;
