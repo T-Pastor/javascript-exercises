@@ -25,7 +25,7 @@ const sum = function(...nums) {
     total += nums[i];
   }
   
-  return total;
+  return parseInt(total);
 };
 
 const multiply = function(...nums) {
