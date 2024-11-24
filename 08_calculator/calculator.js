@@ -51,7 +51,7 @@ const factorial = function(num) {
     return parseInt(1);
   }
   
-  for (let i = 1; i < num; i++) {
+  for (let i = 1; i <= num; i++) {
     total *= i;
   }
 
