@@ -20,9 +20,10 @@ const subtract = function(...nums) {
 
 const sum = function(...nums) {
   let total = 0;
+  let numbers = nums.flat();
   
-  for (let i = 0; i < nums.length; i++) {
-    total += nums[i];
+  for (let i = 0; i < numbers.length; i++) {
+    total += numbers[i];
   }
   
   return parseInt(total);
