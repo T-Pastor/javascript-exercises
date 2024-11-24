@@ -45,8 +45,12 @@ const power = function(base, exponent) {
 };
 
 const factorial = function(num) {
-	let total = 0;
-
+	let total = 1;
+  
+  if (num == 0) {
+    return parseInt(1);
+  }
+  
   for (let i = 1; i < num; i++) {
     total *= i;
   }
