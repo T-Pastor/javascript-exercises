@@ -1,6 +1,12 @@
 const fibonacci = function(num) {
     let fib = [1, 1];
 
+    if (num == 0) {
+        return 0;
+    } else if (num < 0) {
+        return 'OOPS';
+    }
+
     for (let i = 2; i < num; i++) {
             
         let nextNumber = fib.at(i - 1) + fib.at(i - 2);
