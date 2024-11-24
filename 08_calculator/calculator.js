@@ -9,9 +9,9 @@ const add = function(...nums) {
 };
 
 const subtract = function(...nums) {
-	let total = 0;
+	let total = nums[0];
   
-  for (let i = 0; i < nums.length; i++) {
+  for (let i = 1; i < nums.length; i++) {    
     total -= nums[i];
   }
   
